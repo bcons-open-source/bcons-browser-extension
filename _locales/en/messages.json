@@ -1,0 +1,59 @@
+{
+  "extensionName": {
+    "message": "bcons - PHP debug helper"
+  },
+  "extensionDesc": {
+    "message": "Easily log your PHP data values and get errors, warnings, payload, cookies, and session data messages."
+  },
+  "userTokenTit": {
+    "message": "User token"
+  },
+  "userTokenDesc1": {
+    "message": "Please insert your user token to retrieve your active projects."
+  },
+  "userTokenDesc2": {
+    "message": "You can find your user token in the <a href='https://bcons.dev/account' target='_blank' tabindex='0'>Account</a> section of the bcons website."
+  },
+  "userTokenPlaceholder": {
+    "message": "Your user token"
+  },
+  "userTokenFetchError": {
+    "message": "Error connecting to bcons server."
+  },
+  "userTokenAuthError": {
+    "message": "User token not found.:<ul><li>Please check that you have entered the token as displayed in the <a href='https://bcons.dev/account' target='_blank' tabindex='0'>Account</a> section of the bcons website.</li><li>Your account may have been suspended by an administrator of your company, please reach out to the individual in charge of bcons accounts at your company.</li></ul>"
+  },
+  "userInactiveError": {
+    "message": "Your user account is inactive. Please reach out to the individual in charge of bcons accounts at your company."
+  },
+  "project": {
+    "message": "Project"
+  },
+  "domains": {
+    "message": "Domains"
+  },
+  "headerName": {
+    "message": "Header name"
+  },
+  "headerValue": {
+    "message": "Header value"
+  },
+  "clipCopy": {
+    "message": "Copy to clipboard"
+  },
+  "clipCopied": {
+    "message": "Content copied to clipboard"
+  },
+  "projectsListIntro": {
+    "message": "This is a list of the projects you are assigned to. Debug will be activated on any domain assigned to a project."
+  },
+  "reload": {
+    "message": "Refresh data"
+  },
+  "yourProjects": {
+    "message": "Your projects"
+  },
+  "noDomainsDefined": {
+    "message": "No URLs defined"
+  }
+}

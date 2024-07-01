@@ -1,0 +1,1 @@
+/home/koas/Server/htdocs/bcons-devtools-translator/bcons2devtools.js

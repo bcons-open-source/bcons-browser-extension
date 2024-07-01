@@ -1,0 +1,144 @@
+@import _common
+
+// Options page styles
+
+body
+  background: var(--background)
+  color: var(--mainColor)
+  padding: 0 20px
+  margin: 0
+  display: flex
+  flex-direction: column
+  align-items: center
+
+
+
+a
+  color: #00adb5
+  text-decoration: none
+
+input
+  border-radius: 7px
+  padding: 10px
+  border: 1px solid var(--borders)
+  outline: none
+  &:focus
+    outline: 1px solid var(--outlines)
+    border: 1 px solid transparent
+  &::placeholder
+    font-style: italic
+
+section
+  h1, h2
+    margin-block-end: 20px
+  p
+    max-width: 580px
+#userToken
+  margin-block-start: 20px
+  .tokenContainer
+    display: flex
+    gap: 20px
+    align-items: center
+    margin-block-start: 20px
+    img
+      display: none
+      max-inline-size: 24px
+    input
+      inline-size: 510px
+      font-family: "MonaspaceNeon"
+      font-size: 0.8rem
+      text-align: center
+      background-color: var(--inputBg)
+      color: var(--mainColor)
+      @media(max-width:600px)
+        inline-size: calc(100vi - 40px)
+  &.loading #iconLoading, &.success #iconOk, &.error #iconKo
+      display: block
+  .userDataInfo
+    margin-block: 20px
+    .userTokenErrorMsg
+      color: #EF4444
+      &:empty
+        display: none
+  ul
+    display: flex
+    flex-direction: column
+    gap: 20px
+    max-width: 500px
+    li
+      line-height: 1.2rem
+
+  .userDataContent
+    details
+      summary
+        font-weight: bold
+        font-size: 0.9rem
+        cursor: pointer
+        padding-block-end: 20px
+        display: flex
+        justify-content: space-between
+        button
+          border: 0
+          background: none
+          font-size: 0.8rem
+          font-weight: normal
+          color: #00adb5
+          cursor: pointer
+    .projectsList
+      margin-block-start: 20px
+      table
+        border-collapse: collapse
+        tr
+          vertical-align: top
+        .headerValue
+          display: flex
+          gap: 20px
+          align-items: center
+          justify-content: space-between
+          position: relative
+          img
+            block-size: 16px
+            inline-size: 16px
+            object-fit: contain
+            object-position: center
+            cursor: pointer
+        th
+          text-align: start
+        th:not(:empty), td
+          padding: 10px
+        td
+          border: 1px solid var(--borders)
+          &.name
+            font-weight: bold
+          span:first-of-type
+            display: none
+            font-weight: bold
+            font-size: 0.8rem
+        tr.multiple:not(:last-child)
+          td:not(:first-child)
+            border-block-end: 1px solid var(--borders-dimmed)
+        tbody tr:hover td:not(.name)
+          background-color: var(--borders-dimmed)
+
+        @media(max-width:768px)
+          table
+            inline-size: 100%
+          tr
+            display: flex
+            flex-direction: column
+            margin-block-end: 20px
+          thead
+            display: none
+          td span:first-of-type
+            display: block
+
+
+.fullWidth
+  position: relative
+  inset-inline-start: 50%
+  inset-inline-end: 50%
+  margin-inline: -50vi
+  max-inline-size: 100vi
+  inline-size: 100vi
+  display: flex
+  justify-content: center

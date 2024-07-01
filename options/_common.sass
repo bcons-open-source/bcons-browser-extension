@@ -1,0 +1,123 @@
+$color950: #030712
+$color900: #111827
+$color800: #1f2937
+$color700: #374151
+$color600: #4b5563
+$color500: #6b7280
+$color400: #9ca3af
+$color300: #d1d5db
+$color200: #e5e7eb
+$color100: #f3f4f6
+$color50: #f9fafb
+
+
+
+$primary950: #082f49
+$primary900: #0c4a6e
+$primary800: #075985
+$primary700: #0369a1
+$primary600: #0284c7
+$primary500: #0ea5e9
+$primary400: #38bdf8
+$primary300: #7dd3fc
+$primary200: #bae6fd
+$primary100: #e0f2fe
+$primary50: #f0f9ff
+
+$primary: #02adb5
+
+
+
+@font-face
+  font-family: 'MonaspaceNeon'
+  src: url('../fonts/MonaspaceNeonVar.woff2')
+  font-weight: 100 900
+  font-stretch: 75% 125%
+  font-style: normal
+  font-variant-ligatures: discretionary-ligatures
+
+@font-face
+  font-family: 'Pretendard'
+  font-weight: 45 920
+  font-style: normal
+  font-display: swap
+  src: url('../fonts/PretendardVariable.woff2') format('woff2-variations')
+
+
+\:root
+  --background: #{$color300}
+  --mainColor: #{$color800}
+  --borders: #{$color500}
+  --borders-dimmed: #{$color500}
+  --outlines: #{$color500}
+  --inputBg: #{$color100}
+
+@media (prefers-color-scheme: dark)
+  \:root
+    --background: #{$color900}
+    --mainColor: #{$color400}
+    --borders: #{$color700}
+    --borders-dimmed: #{$color700}
+    --inputBg: #{$color700}
+
+// Reset: https://andy-bell.co.uk/a-more-modern-css-reset
+*, *::before, *::after
+  box-sizing: border-box
+
+html
+  -moz-text-size-adjust: none
+  -webkit-text-size-adjust: none
+  text-size-adjust: none
+
+body, h1, h2, h3, h4, p, figure, blockquote, dl, dd
+  margin: 0
+  font-size: 0.9rem
+  font-family: "Pretendard", sans-serif
+
+p
+  margin-block-end: 1.5rem
+  line-height: 1.5rem
+
+ul[role='list'], ol[role='list']
+  list-style: none
+
+body
+  min-block-size: 100vh
+  line-height: 1.5
+
+h1, h2, h3, h4, button, input, label
+  line-height: 1.1
+
+h1, h2, h3, h4
+  text-wrap: balance
+
+img, picture
+  max-inline-size: 100%
+  display: block
+
+input, button, textarea, select
+  font: inherit
+
+textarea:not([rows])
+  min-block-size: 10em
+
+// Styles used in more than one page
+header.logo
+  padding-block: 20px
+  img
+    max-block-size: 60px
+    margin: auto
+    display: block
+a
+  color: #00adb5
+
+::-webkit-scrollbar
+  width: 5px
+
+::-webkit-scrollbar-thumb
+  background: #bbb
+  border-radius: 20px
+
+::-webkit-scrollbar-track
+  background: #ddd
+  border-radius: 20px

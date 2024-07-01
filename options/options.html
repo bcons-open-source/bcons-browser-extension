@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="options.min.css" />
+  <link rel="icon" href="icon.png" type="image/png">
+</head>
+
+<body>
+  <header class="logo">
+    <img src="bconsFull.svg" alt="">
+  </header>
+  <main>
+    <section id="userToken">
+      <!--<h1 data-i18n="userTokenTit"></h1>-->
+      <p data-i18n="userTokenDesc1"></p>
+      <p data-i18n="userTokenDesc2"></p>
+      <div class="tokenContainer">
+        <input type="text" id="userTokenInput"
+               data-i18n-placeholder="userTokenPlaceholder">
+        <img id="iconLoading" src="loading.svg" alt="">
+        <img id="iconOk" src="ok.svg" alt="">
+        <img id="iconKo" src="error.svg" alt="">
+      </div>
+      <div class="userDataInfo">
+        <div class="userTokenErrorMsg"></div>
+        <div class="userDataContent">
+          <details open>
+            <summary>
+              <div>
+                <b id="userName"></b> -
+                <span data-i18n="yourProjects">Your projects</span>
+                <span id="numProjects"></span>
+              </div>
+              <button id="reloadData" data-i18n="reload"></button>
+            </summary>
+            <p data-i18n="projectsListIntro"></p>
+            <div class="projectsList fullWidth"></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <script src="options.js"></script>
+</body>
+
+</html>
